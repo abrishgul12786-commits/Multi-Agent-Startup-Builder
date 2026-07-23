@@ -1,0 +1,6 @@
+{
+  "name": "Multi-Agent Startup Builder",
+  "description": "AI-powered platform where 7 specialized AI agents collaborate to evaluate startup ideas, analyze markets, model finances, and generate executive reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
