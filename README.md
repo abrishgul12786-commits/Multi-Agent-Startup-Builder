@@ -3,6 +3,23 @@
 An AI-powered multi-agent platform where **7 specialized executive AI agents** collaborate to evaluate startup ideas, conduct market research, analyze competitors, structure business model canvases, model financial unit economics, and formulate actionable 12-month execution roadmaps.
 
 ---
+## 🎯 Problem It Solves
+
+Many aspiring entrepreneurs and students have startup ideas but struggle to evaluate:
+- Is the idea financially viable?
+- Who are the actual customers?
+- Who are the competitors?
+- What business model should they use?
+- How much funding is required?
+
+StartupForge AI solves this by providing an AI-powered virtual startup advisory team that analyzes ideas from multiple executive perspectives.
+
+## 👥 Target Users
+
+- Student entrepreneurs
+- Early-stage founders
+- Startup enthusiasts
+- Small business owners
 
 ## 🌟 Key Features
 
