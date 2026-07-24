@@ -1,4 +1,4 @@
-import { getAI } from "./gemini.js";
+import { getAI } from "./gemini";
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
@@ -304,21 +304,14 @@ Produce a thorough, realistic, highly structured JSON report following this exac
       ...parsedData,
     };
 
-    return res.status(200).json(report);
+  
+   return res.status(200).json(report);
 
-  catch (error) {
+} catch (error: any) {
   console.error("API ERROR:", error);
 
-  return new Response(
-    JSON.stringify({
-      error: error instanceof Error ? error.message : String(error)
-    }),
-    {
-      status: 500,
-      headers: {
-        "Content-Type": "application/json"
-      }
-    }
-  );
+  return res.status(500).json({
+    error: error?.message || String(error),
+  });
 }
 }

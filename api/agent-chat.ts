@@ -1,4 +1,4 @@
-import { getAI } from "./gemini.js";
+import { getAI } from "./gemini";
 
 
 export default async function handler(req: any, res: any) {
