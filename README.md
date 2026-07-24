@@ -20,7 +20,15 @@ StartupForge AI solves this by providing an AI-powered virtual startup advisory 
 - Early-stage founders
 - Startup enthusiasts
 - Small business owners
+### 🏠 Screenshots
 
+
+![Startup Dashboard](dashboard.png)
+![Running Problem](Running_problem.png)
+![Processing](Processing.png)
+![Result](result.png)
+![Report](Report.png)
+![Detailed Report](DReport.png)
 ## 🌟 Key Features
 
 ### 🤵 The 7 Executive AI Agent Swarm
@@ -50,6 +58,27 @@ StartupForge AI solves this by providing an AI-powered virtual startup advisory 
 - **Report Persistence & Export**: Save generated startup reports to local storage, export raw Markdown summaries, or print to clean PDF format.
 
 ---
+## 🤖 AI Feature
+
+StartupForge AI uses a multi-agent architecture powered by Gemini.
+
+Each agent has a specialized role:
+
+- CEO Agent: evaluates strategic viability
+- Market Agent: researches TAM/SAM/SOM
+- Finance Agent: creates financial projections
+- Risk Agent: identifies business risks
+
+### Example System Instruction
+
+"You are a startup strategy expert. Analyze the given startup idea objectively. Evaluate market opportunity, customer segments, risks, and provide actionable recommendations."
+## 🔄 How It Works
+
+1. User enters startup idea
+2. AI agents analyze different aspects
+3. Reports are generated
+4. User reviews business strategy
+5. Reports can be saved/exported
 
 ## 🏗️ Technology Stack
 
