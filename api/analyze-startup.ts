@@ -1,5 +1,4 @@
-import { getAI } from "../lib/gemini";
-
+import { getAI } from "./gemini";
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
     return res.status(405).json({
