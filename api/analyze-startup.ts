@@ -306,12 +306,19 @@ Produce a thorough, realistic, highly structured JSON report following this exac
 
     return res.status(200).json(report);
 
-  } catch (err: any) {
-    console.error("Error generating startup report:", err);
+  catch (error) {
+  console.error("API ERROR:", error);
 
-    return res.status(500).json({
-      error: "Failed to generate multi-agent startup report.",
-      details: err?.message || String(err),
-    });
-  }
+  return new Response(
+    JSON.stringify({
+      error: error instanceof Error ? error.message : String(error)
+    }),
+    {
+      status: 500,
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+  );
+}
 }

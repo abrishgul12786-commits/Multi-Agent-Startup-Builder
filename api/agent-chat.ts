@@ -65,12 +65,20 @@ Provide a concise, highly insightful, professional answer tailored specifically 
         "I have analyzed your request based on our current business parameters.",
     });
 
-  } catch (err: any) {
-    console.error("Error in agent chat:", err);
-
-    return res.status(500).json({
-      error: "Failed to process agent chat.",
-      details: err?.message || String(err),
-    });
   }
+  catch (error) {
+  console.error("API ERROR:", error);
+
+  return new Response(
+    JSON.stringify({
+      error: error instanceof Error ? error.message : String(error)
+    }),
+    {
+      status: 500,
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+  );
+}
 }
