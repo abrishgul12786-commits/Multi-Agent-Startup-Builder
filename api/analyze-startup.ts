@@ -1,4 +1,4 @@
-import { getAI } from "./gemini.ts";
+import { getAI } from "./gemini.js";
 
 export default async function handler(req: any, res: any) {
   if (req.method !== "POST") {
